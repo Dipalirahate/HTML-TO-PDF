@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>BetaCraft</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/
+font-awesome/5.15.2/css/all.min.css"/>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <!-- <link rel="stylesheet" href="index.css"> -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+  <script src="script.js"></script>
+  <style>
+    *{
+      text-transform: capitalize;
+    }
+    body{
+      margin: 0px;
+      padding: 0px;
+    }
+    .header{
+      display: flex;
+      justify-content: space-between;
+      justify-items: center;
+      height: 70px;
+    }
+    .three-dot-menu {
+    }
+    .header-logo{
+      height: 60px;
+      width: 235px;
+    }
+    .ContactBtn{
+      background-color: #ff5043;
+      width: 139px;
+      text-align: center;
+      align-content: center;
+      align-self: center;
+      padding: 23px
+    } 
+    .demo2{ 
+      height: 600px;
+      width: auto;
+      background-color: rgb(14, 13, 13);
+    justify-content: space-around; 
+    align-items: center;
+    display: flex;
+    }
+    div.demo3{ 
+        height: 600px;
+      width: auto;
+    margin-top: 18px; 
+    justify-content: space-around; 
+    align-items: center;
+    display: flex;
+      
+    }
+    div.demo4{ 
+    height:100%;
+    width:100%;
+    background-color:  rgb(201, 215, 208);
+    margin-top: 10px;
+
+    justify-content:start; 
+    align-items: center;
+    display: flex;
+    }
+    .imp4{
+      margin: 0px 100px;
+      width: inherit;
+    }
+    div.demo5{
+        height:700px;
+        width: auto;
+        background-color:yellowgreen;
+    }
+    div.demo6{
+        
+        height: 600px;
+      width: auto;
+    margin-top: 10px; 
+    justify-content: space-around; 
+    
+    }
+    
+    .imp{
+       height: 300px;
+       width: 400px;
+       color: white;
+    }
+    .imp3{
+       height: 300px;
+       width: 400px;
+       
+    }
+    .a{
+        display:inline-block;
+        margin: 20px;
+        margin-left: 40px;
+        height: 400px;
+        width: 250px;
+        background-color:  rgb(201, 215, 208);
+        justify-content: center;
+        border-radius:5px;
+        text-align: center;
+        padding: 10px 5px;
+    }
+
+    .imga{
+      justify-content: center;
+      margin-top: 50px;
+    }
+
+    .card1p{
+      margin-top: 50px;
+    }
+
+
+    .imp5{
+        margin-left:80px;
+    }
+    .imp6{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    .green{
+        height: 400px;
+        width: 100%;
+        text-align: center;
+        margin-top: 250px;
+    }
+    .gray{
+        position: absolute;
+        margin-left: 45%;
+        z-index: 1;
+    }
+
+    .parent{
+      position: relative;
+    }
+    .child{
+      width:600px;
+      background-color: #F5F5F7;
+      height:300px;
+      margin-left: 30%;
+      border-radius: 8px;
+      text-align: center;
+      justify-content: center;
+      padding: 5px 0;
+    }
+    .childimg{
+      border-radius: 50%;
+      width: 90px;
+      background-color: #FF5043;
+      margin-left: 250px;
+    }
+    .childimg img{
+      height: 90px;
+    }
+    .childimg1{
+      border-radius: 50%;
+      width: 90px;
+      margin-left: 250px;
+    }
+    .child p{
+      color: #53656E;
+    }
+    .childfooter{
+      display: flex;
+      justify-content: space-around;
+    }
+    .childfooter span{
+      color: #FF5043;
+    }
+    .childfooter img{
+      height: 25px;
+    }
+    .green span{
+      color: #FF5043;
+    }
+    .greenlogos{
+      margin-top: 50px;
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      padding-left: 50px;
+      align-items: center;
+    }
+    .greenlogos div{
+      width: 50px;
+    }
+    .handdiv{
+      background-color: #F5F5F7;
+      height: 700px;
+      width: 100%;
+      display: flex;
+      margin-top: 500px;
+    }
+    .handimg{
+      width: 50%;
+    float: left;
+    justify-content: center;
+    }
+    .handimg img{
+      height: 1000px;
+      width: 100%;
+    }
+    .innerdiv{
+      padding: 20px;
+      position: relative;
+      margin-top: 200px;
+      margin-left: 100px;
+    }
+    .innerdiv span{
+      color: #FF5043;
+      
+    }
+
+    .divmargin{
+      margin-bottom: 20px;
+    }
+
+    .innerdiv hr{
+      margin-top: 20px;
+    }
+
+    .childparaicon{
+      float: left;
+      width: 50%;
+    }
+
+    .childparaicon2{
+      float: left;
+      width: 50%;
+      text-align: right;
+    }
+    .thirdlast{
+      padding: 50px 100px;
+      position: relative;
+    }
+    .descdiv span{
+      color: #FF5043;
+    }
+    .childdesc{
+      width: 50%;
+      float: left;
+      height: 500px;
+      background-image: url("../image/blog-card-1-img.png");
+      background-size: cover;
+      border-radius: 12px;
+      padding: 20px;
+    }
+    .childdesc2{
+      width: 50%;
+      float: left;
+      height: 500px;
+    }
+    .childdescpara{
+      bottom: -340px;
+      position: relative;
+      color: azure;
+    }
+    .desc2{
+      justify-content: space-between;
+    }
+    .first{
+      height: 50%;
+      background-color: #F5F5F7;
+      margin-bottom: 10px;
+      margin-left: 10px;
+      border-radius: 12px;
+    }
+    .second{
+      height:50%;
+      background-color: #F5F5F7;
+      margin-left: 10px;
+      border-radius: 12px;
+    }
+
+    .first1{
+      float: left;
+      width: 50%;
+      height: 100%;
+      padding: 10px;
+      margin: auto;
+      
+    }
+
+    .first2{
+      float: left;
+      width: 50%;
+      background-image: url("../image/blog-img-1.png");
+      height: 100%;
+      background-size: cover;
+      border-radius: 12px;
+    }
+
+    .second1{
+      width: 50%;
+      float: left;
+      background-image: url("../image/story-img-1.png");
+      height: 100%;
+      background-size: cover;
+      border-radius: 12px;
+    }
+
+    .second2
+    {
+      width: 50%;
+      float: left;
+      height: 100%;
+      padding: 10px;
+      margin: auto;
+    }
+    .secondlast{
+      background-image: url("../image/work-bg.png");
+      height: 700px;
+      width: 100%;
+      margin-top: 460px;
+      background-size: cover;
+      display: flex;
+    }
+    .opa{
+      margin: auto;
+      color: white;
+      text-align: center;
+    }
+    .opa span{
+      color: #FF5043;
+    }
+    .last{
+      background-color: #E5E3DF;
+      height: 500px;
+      display: block;
+      padding: 50px 0;
+    }
+    .lastone{
+      margin: auto;
+      width: 85%;
+    }
+    .lastone img{
+      margin-bottom: 20px;
+    }
+    .lastone2{
+      width: 85%;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+    }
+    .lastone2 ul{
+      list-style: none;
+      padding: 0;
+    }
+    .lastone2 ul li{
+      font-size: 14px;
+    }
+    .lastone3{
+      float: right;
+    }
+    .footer{
+      border-color: #E9E9E9;
+      display: flex;
+      width: 100%;
+      height: 50px;
+    }
+    .footer1{
+      margin: auto;
+      width: 85%;
+      display: flex;
+    }
+    .demoservices{
+      cursor: pointer;
+    }
+    details > summary{
+      list-style: none;
+    }
+    details > summary ::-webkit-details-marker{
+      display:none ;
+    }xy
+    .childdemoservices2{
+      float: right;
+    }
+    .special{
+      display: flex;
+      justify-content: end;
+      margin-top: -30px;
+      padding: 5px;
+    }
+    .design{
+      display: flex;
+      justify-content: space-between;
+    }
+    .designImg{
+      width: 500px;
+      height: 390px;
+    }
+    .textdetail{
+      width: 550px;
+    }
+    .margin-bottom{
+      font-weight:bold;
+      margin: 30px 0px;
+
+    }
+    .bg-y{
+      margin: 5px;
+      width: 260px;
+      display: inline-block;
+      background-color: #fbfb0061;
+      padding: 10px;
+    }
+    </style>
+
+</head>
+
+<body>
+  <div id="pdfcanvert">
+<header class="header">
+    <div class="three-dot-menu">    <i class="bi bi-list"></i>
+    </div>
+    <div><img class="header-logo" src="../image//Logo-Beta.svg"></div>
+    </div>
+    <div class="ContactBtn">Contact US</div>
+  </header>
+<div class="demo2">
+    <div class="imp">
+        <h1>Timeless Products,</h1>
+        <h1>great <span style="color:red;">brands.</span></h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis delectus architecto molestiae, te
+            mpora itaque pariatur nisi cum voluptates,
+             exercitationem impedit fuga! Quisquam dolor vel excepturi sunt cupiditate modi soluta nobis?</p>
+    </div>
+    <div class="imp1">
+        <img src="../image/craft1.png" style="height: 500px;width: 600px;" > 
+  
+    </div>
+</div>
+<div class="demo3">
+    <div class="imp2">
+        <img src="../image/earth.png" style="height: 400px;width: 400px;" > 
+        
+    </div>
+    <div class="imp3">
+        <h1>Timeless Products,</h1>
+        <h1>great <span style="color:red;">brands,</span></h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis delectus architecto molestiae, te
+            mpora itaque pariatur nisi cum voluptates,
+             exercitationem impedit fuga! Quisquam dolor vel excepturi sunt cupiditate modi soluta nobis.</p>
+    </div>
+</div>
+<div class="demo4">
+    <div class="imp4">
+        Services
+        <h1>Getting<span style="color:red;"> started </span>with us</h1>
+        <br><br><hr>
+         <div class="demoservices">
+          <div class="childdemoservices1">
+            <h4>Design & innovation</h4>
+          </div>
+          <details>
+            <summary>
+          <div class="special" class="childdemoservices2">
+            <span id="add"><i class="bi bi-plus"></i></span>
+          </div>
+        </summary>
+        <div class="design">
+           <div class="textdetail">
+                <p class="margin-bottom">betacraft is a trusted global Digital Product Engineering and Enterprice
+              Modernization Company. We integrate experience design, complex engineering 
+            and demain expertise to help our clients envision what's possible and accelerate
+                their transition into tomorrow's digital businesses.</p>
+            <h5 class="bg-y">Design Research</h5>
+            <h5 class="bg-y">Product Design Sprints</h5>
+            <h5 class="bg-y">UX/UI Design</h5>
+            <h5 class="bg-y">Investment Pitch Package</h5>
+            <h5 class="bg-y">Sales Pitch Package</h5>
+          </div>
+        <div class="imgdesign">
+          <img  class="designImg"src="../image/craft-2.jpg"/>
+        </div>
+
+        </div>
+
+
+
+
+
+
+
+      
+      
+      
+      
+      </details>
+
+        </div>
+        <hr/>
+        <div class="demoservices">
+          <div class="childdemoservices1">
+            <h4>Digital Product Engineering</h4>
+          </div>
+          <div class="special" class="childdemoservices2">
+            <span>+</span>
+          </div>
+        </div>
+        <hr/>
+        <div class="demoservices">
+          <div class="childdemoservices1">
+            <h4>Cloud Adoptation Services</h4>
+          </div>
+          <div class="special" class="childdemoservices2">
+            <span>+</span>
+          </div>
+        </div>
+        <hr/>
+        <div class="demoservices">
+          <div class="childdemoservices1">
+            <h4>Data Analytics</h4>
+          </div>
+          <div class="special" class="childdemoservices2">
+            <span>+</span>
+          </div>
+        </div>
+        <hr/>
+        <div class="demoservices">
+          <div class="childdemoservices1">
+            <h4>Digital Marketing Studio</h4>
+          </div>
+          <div class="special" class="childdemoservices2">
+            <span>+</span>
+          </div>
+        </div>
+        <hr/>
+        </div> 
+        </div> 
+        </div> 
+        
+    </div>
+</div>
+<div class="demo5">
+       <div class="imp5">
+        Industries
+        <h1>Our <span style="color:red;">expertise</span> and solutions</h1>
+       </div>
+      <div class="imp6">
+        <div class="a"><div class="imga"><img src="../image/BC.svg"/></div>
+        <div class="card1p">
+          <h4>Blockchain</h4>
+          <p>It is a long establish fact that reader will be distracted by the readale content</p>
+        </div>
+      </div>
+      <div class="a"><div class="imga"><img src="../image/Travel.svg"/></div>
+      <div class="card1p">
+        <h5>Travel & Hospitality</h6>
+        <p>It is a long establish fact that reader will be distracted by the readale content</p>
+      </div>
+    </div>
+    <div class="a"><div class="imga"><img src="../image/MFG.png"/></div>
+    <div class="card1p">
+      <h4>Manufacturing</h4>
+      <p>It is a long establish fact that reader will be distracted by the readale content</p>
+    </div>
+  </div>
+  <div class="a"><div class="imga"><img src="../image/EV.png"/></div>
+  <div class="card1p">
+    <h4>Electriv Vehicle</h4>
+    <p>It is a long establish fact that reader will be distracted by the readale content</p>
+  </div>
+</div>
+
+      </div> 
+
+</div>  
+<div class="demo6">
+    <div class="black">
+    <img src="../image/craft-3.jpg" style="height: 700px;width:100%;" > 
+    </div>
+    <!-- <div class="gray">
+        <img src="../image//story-img-3.jpg" style="height: 200px;width: 200px" > 
+        </div> -->
+        <div class="green">
+             <!-- <img src="C:\Users\Shree\Downloads\Archive (1)\homepage-img\story-img-4.jpg" style="height: 500px;width:100%;" >   -->
+            <h6>OUR GLOBAL REACH</h6>
+            <h1>Our clients <span>love</span> us,you will love too.</h1>
+            <div class="greenlogos">
+              <div><img src="../image/google-logo.png" style="width: 175px"/></div>
+              <div><img src="../image/BlueYouderimg.png" style="width: 175px"/></div>
+              <div><img src="../image/infosys-logo-grey.png" style="width: 175px"/></div>
+              <div><img src="../image/NTTdataimage.png" style="width: 175px"/></div>
+              <div><img src="../image/datameticeimg.png" style="width: 175px"/></div>
+              <div><img src="../image/NTTdataimage.png" style="width: 175px"/></div>
+              <div><img src="../image/infosys-logo-grey.png" style="width: 175px"/></div>
+              <div><img src="../image/datameticeimg.png" style="width: 175px"/></div>
+              <div><img src="../image/google-logo.png" style="width: 175px"/></div>
+              <div><img src="../image/BlueYouderimg.png" style="width: 175px"/></div>
+            </div>
+            </div>
+</div>
+<div class="parent">
+  <div class="child">
+      <div class="childimg">
+        <img src="../image/quote.png" />
+</div>
+        <div class="childtext"><h5>Lorem ipsum dolor sit amet consectetur, adipisicing elit. si possimus ipsum,</h5>      </div>
+        <div class="childimg1">
+          <img src="../image/profile-img-1.png" style="border-radius: 50%; height:50px"/>
+  </div>
+  <div>
+    <p>- Bill Gust, <i>CEO and President</i></p>
+  </div>
+  <div class="childfooter">
+    <div>
+      <p>02 —— 08</p>
+    </div>
+    <div>
+      <p><img src="../image/circled-play-50.png" /><span> View Success Story</span></p>
+    </div>
+    <div>
+      <p>← →</p>
+    </div>
+  </div>
+      </div>
+</div>
+
+<div class="handdiv">
+  <div class="handimg">
+    <div class="innerdiv">
+      
+    <p>CARRERS</p>
+    <h1
+    >Join our<span> team</span></h1>
+    <hr/>
+    <div class="paraicon">
+      <div class="childparaicon">
+        <h5>Benefits</h5>
+      </div>
+      <div class="childparaicon2">
+        +
+      </div>
+    </div><br>
+    <hr/>
+    <div class="paraicon">
+      <div class="childparaicon">
+        <h5>Interview Process</h5>
+      </div>
+      <div class="childparaicon2">
+        +
+      </div>
+    </div><br>
+    <hr/>
+    <div class="paraicon">
+      <div class="childparaicon">
+        <h5>Opportunities</h5>
+      </div>
+      <div class="childparaicon2">
+        +
+      </div>
+    </div><br>
+    <hr/>
+    </div>
+    </div>
+  <div class="handimg">
+
+    <img src="../image/hand.png" />
+  </div>
+</div>
+
+
+<div class="thirdlast">
+  <div class="descdiv">
+    <p>Blogs / News / Events</p>
+    <h2>Latest<span> Insights</span></h2>
+  </div>
+  <div class="desc2">
+    <div class="childdesc">
+      <div class="childdescpara">
+        <p>FUTURE | 4 min read</p>
+        <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum voluptatum cumque velit architecto</h5>
+        <p>December 14,2021</p>
+      </div>
+    </div>
+    <div class="childdesc2">
+      <div class="first">
+        <div class="first1">
+          <p>Blog | 4 min read</p>
+        <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum voluptatum cumque velit architecto</h5>
+        <p>December 14,2021</p>
+        </div>
+        <div class="first2">
+
+        </div>
+      </div>
+      <div class="second">
+        <div class="second1">
+
+        </div>
+        <div class="second2">
+          <p>Blog | 4 min read</p>
+          <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum voluptatum cumque velit architecto</h5>
+          <p>December 14,2021</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+
+<div class="secondlast">
+  <div class="opa">
+    <p>NEXT STOP</p>
+    <h1>Our <span> Work</span></h1>
+  </div>
+</div>
+
+<div class="last">
+  <div class="lastone">
+    <img src="../image/Logo-Beta.svg"/>
+  </div>
+  <div class="lastone2">
+    <div class="list1"> 
+      <ul>
+        <li><b>Services</b></li>
+        <li>Design & innovation</li>
+        <li>Digital Product Engineering</li>
+        <li>Cloud Adoptation Services</li>
+        <li>Data Analytics</li>
+        <li>Digital Marketing Studio</li>
+      </ul>
+    </div>
+    <div class="list2"> 
+      <ul>
+        <li><b>Industries</b></li>
+        <li>Blockchain</li>
+        <li>Travel & Hospitality</li>
+        <li>Manufacturing (OEM's)</li>
+        <li>Electriv Vehicle (EV)</li>
+        <li>Loyality</li>
+        <li>Marktech</li>
+        <li>GIS</li>
+        <li>eLearning</li>
+      </ul>
+    </div>
+    <div class="list3"> 
+      <ul>
+        <li><b>Company</b></li>
+        <li>About</li>
+        <li>Work</li>
+        <li>Insights</li>
+        <li>Partners</li>
+        <li>Careers</li>
+        <li>Contact Us</li>
+      </ul>
+    </div>
+    <div class="list4"> 
+      <ul>
+        <li><b>Other</b></li>
+        <li>Code of conduct</li>
+        <li>Privacy Notice</li>
+        <li>Cookie Policy</li>
+        <li>Term of Use</li>
+      </ul>
+    </div>
+    
+  </div>
+  <div class="lastone3">
+    <img src="../image/footerIcon.png" style="height: 100px; width: 200px;"/>
+  </div>
+</div>
+
+<div class="footer">
+  <div class="footer1">
+    <p>&copy; 2021 betaCraft. All rights reserved</p>
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+<script>
+let add = document.getElementById("add");
+let replace = true;
+add.addEventListener("click",function(){
+  if(replace)
+  {
+    add.innerHTML = "<i class='bi bi-x'></i>";
+    replace = false;
+  }
+  else{
+    add.innerHTML = "<i class='bi bi-plus'></i>"
+    replace = true;
+  }
+  })  
+</script>
+<button onclick="generatePDF()">Download pdf</button>
+</div>
+</body>
+</html>
+
